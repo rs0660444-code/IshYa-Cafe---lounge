@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - IshYa Cafe</title>
+    <style>
+    body {
+        margin: 0;
+        background: #221610;
+        font-family: Verdana;
+        }
+    .box {
+        width: 350px;
+        background: #3c2a21;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #d5a16a;
+        }
+    .box h2 {
+        text-align: center;
+        color: #e6ccb2;
+        }
+    .box h2 span {
+        color: #d5a16a;
+        }
+    .box label {
+        color: #e6ccb2;
+        font-size: 13px;
+        }
+    .box input, .box textarea, .box select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 12px 0;
+        border-radius: 5px;
+        border: 1px solid #5c4a3d;
+        background: #221610;
+        color: white;
+        box-sizing: border-box;
+        }
+    .btn {
+        background: #d5a16a;
+        color: #221610;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        }
+    .success {
+        display: none;
+        background: #3c2a21;
+        width: 350px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        border: 2px solid #d5a16a;
+        }
+    .success h1 {
+        color: #e6ccb2;
+        font-size: 24px;
+        }
+    .success h1 span {
+        color: #d5a16a;
+        }
+    .success p {
+        color: #8d7b68;
+        font-size: 14px;
+        margin-top: 10px;
+        }
+    #success:target {
+        display: block;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h2>Place Your <span>Order</span></h2>
+            <form action="#success">
+                <label>Name </label>
+                <input type="text" required>
+                <label>Email </label>
+                <input type="email" required>
+                <label>Phone </label>
+                <input type="text" required>
+                <label>Quantity </label>
+                <select required>
+                    <option value="">Select Quantity</option>
+                    <option value="1">1 </option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 </option>
+                </select>
+                <label>Address </label>
+                <textarea required></textarea>
+                <br>
+                <input type="submit" value="Confirm Order" class="btn">
+            </form>
+        </div>
+        <div id="success" class="success">
+            <h1>Order <span>Confirmed!</span></h1>
+            <p>Your order with selected quantity has been placed successfully!</p>
+            <a href="menu.html" class="btn">Back to Menu</a>
+        </div>
+    </body>
+</html>    

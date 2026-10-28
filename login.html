@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IshYa</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, sans-serif;
+    }
+    body{
+        background-color: #221610;
+    }
+    .header{
+        background: #3c2a21;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #8d7b68;
+    }
+    .logo{
+        font-size: 28px;
+        font-weight: bold;
+        color: #e6ccb2;
+        text-decoration: none;
+    }
+    .logo span{
+        color: #d5a16a;
+    }
+    .navbar a{
+        color: #e6ccb2;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .navbar a:hover{
+        color: #ffffff;
+        border-bottom: 2px solid #d5a16a;
+        padding-bottom: 3px;
+    }
+    .login-area{
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+    .form{
+        background: #3c2a21;
+        width: 380px;
+        padding: 35px;
+        border-radius: 15px;
+        text-align: center;
+        border: 1px solid #5c4a3d;
+    }
+    .form h1{
+        color: #e6ccb2;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .form p{
+        color: #d6c7b8;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .label{
+        color: #e6ccb2;
+        font-size: 14px;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .input{
+        width: 100%;
+        height: 42px;
+        padding: 0 12px;
+        border-radius: 8px;
+        border: 1px solid #8d7b68;
+        background: #f5e6cc;
+        color: #221610;
+        font-size: 14px;
+    }
+    .btn{
+        width: 100%;
+        height: 42px;
+        margin-top: 20px;
+        background-color: #d5a16a;
+        color: #221610;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: #e6ccb2;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#" class="logo">IshYa Cafe'& Lounge<span>'</span></a>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="login-area">
+        <div class="form">
+            <h1>Welcome Back!</h1>
+            <p>Login to your marketplace account</p>
+            
+            <span class="label">Email address</span>
+            <input type="email" placeholder="Enter your email" class="input">
+            
+            <span class="label">Password</span>
+            <input type="password" placeholder="Enter your password" class="input">
+            
+            <input type="submit" value="Login" class="btn" onclick="alert('login sucessfully')">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Website | codingbyIshYa</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, sans-serif;
+    }
+    body{
+        background-color: #221610;
+        color: #f5e6cc;
+    }
+    .header{
+        background: #3c2a21;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #8d7b68;
+    }
+    .logo{
+        font-size: 28px;
+        font-weight: bold;
+        color: #e6ccb2;
+        text-decoration: none;
+    }
+    .logo span{
+        color: #d5a16a;
+    }
+    .navbar a{
+        color: #e6ccb2;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .navbar a:hover{
+        color: #ffffff;
+        border-bottom: 2px solid #d5a16a;
+        padding-bottom: 3px;
+    }
+    .hero{
+        display: flex;
+        padding: 50px;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-text{
+        width: 50%;
+    }
+    .hero-text h1{
+        font-size: 45px;
+        color: #e6ccb2;
+    }
+    .hero-text h2{
+        font-size: 20px;
+        color: #d5a16a;
+        margin: 15px 0;
+    }
+    .hero-text p{
+        font-size: 17px;
+        color: #d6c7b8;
+        margin-bottom: 25px;
+        line-height: 26px;
+    }
+    .btn{
+        background: #d5a16a;
+        color: #221610;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .btn2{
+        background: transparent;
+        color: #e6ccb2;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 2px solid #d5a16a;
+        display: inline-block;
+    }
+    .hero-img{
+        width: 50%;
+        text-align: center;
+    }
+    .hero-img img{
+        width: 400px;
+        border-radius: 15px;
+        border: 2px solid #d5a16a;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">IshYa Cafe'& Lounge<span>'</span></a>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>IshYa Cafe'& Lounge</h1>
+            <h2>Where Every Sip Brings A Little Happiness!</h2>
+            <p>Welcome to IshYa Cafe'& Lounge, your cozy place for delicious coffee, good vibes and beautiful moment.</p>
+            <a href="contact.html" class="btn">Contact</a>
+            <a href="menu.html" class="btn2">Menu</a>
+        </div>
+        <div class="hero-img">
+            <img src="cafe.jpeg" alt="Cafe Image">
+        </div>
+    </div>
+</body>
+</html>
